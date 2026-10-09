@@ -1,0 +1,77 @@
+{
+  "source_a": {
+    "rows": 2070,
+    "columns": 7,
+    "duplicate_rows": 0,
+    "missing": {
+      "record_id": 0,
+      "name": 0,
+      "email": 0,
+      "ip": 0,
+      "event_date": 0,
+      "segment": 0,
+      "user_agent": 0
+    },
+    "types": {
+      "record_id": "str",
+      "name": "str",
+      "email": "str",
+      "ip": "str",
+      "event_date": "str",
+      "segment": "str",
+      "user_agent": "str"
+    }
+  },
+  "source_b": {
+    "rows": 820,
+    "columns": 9,
+    "duplicate_rows": 0,
+    "missing": {
+      "record_id": 0,
+      "name": 0,
+      "email": 440,
+      "ip": 0,
+      "event_date": 0,
+      "segment": 0,
+      "user_agent": 0,
+      "order_value": 0,
+      "plan": 0
+    },
+    "types": {
+      "record_id": "str",
+      "name": "str",
+      "email": "str",
+      "ip": "str",
+      "event_date": "str",
+      "segment": "str",
+      "user_agent": "str",
+      "order_value": "str",
+      "plan": "str"
+    }
+  },
+  "output_rows": 2020,
+  "duplicates_removed": 50,
+  "decisions": {
+    "matched": 670,
+    "review": 130,
+    "unmatched": 20
+  },
+  "policy": {
+    "max_days": 90,
+    "auto_score": 0.85,
+    "min_margin": 0.15
+  },
+  "sha256": {
+    "A": "c7dd00ea91cd72d6efd09578f90ba875b2df832fe5df37afb6158573d24ab272",
+    "B": "088a329ffe839225e6c21a4a493483fa1cb44fcd8f8f2cef2d2ca548cff6f3ab"
+  },
+  "ordering": "Earliest file occurrence; source A order preserved",
+  "score_meaning": "Evidence weights, not calibrated match probabilities",
+  "controlled_fixture_checks": {
+    "status_agreement": 1.0,
+    "false_auto_links": 0,
+    "accepted_links": 670,
+    "elapsed_seconds_including_outputs": 1.612,
+    "note": "Designed synthetic edge-case fixture; not an estimate of client-data matching precision"
+  }
+}

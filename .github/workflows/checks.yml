@@ -1,0 +1,16 @@
+name: Reproduce and test
+on: [push, pull_request]
+jobs:
+  workflows:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install -r requirements-lock.txt
+      - run: pip install -e . --no-deps
+      - run: python scripts/fetch_data.py
+      - run: python scripts/run_all.py
+      - run: python -m pytest -q
+      - run: python scripts/build_reports.py

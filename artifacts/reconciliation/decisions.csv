@@ -1,0 +1,9 @@
+right_id,left_id,status,score,margin,reason
+B001,A001,matched,1.0,1.0,rule_and_margin_pass
+B002,A002,matched,1.0,1.0,rule_and_margin_pass
+B003,A003,review,1.0,0.0,ambiguous_or_insufficient_evidence
+B004,,unmatched,0.0,1.0,no_candidates
+B005,A005,review,1.0,1.0,ambiguous_or_insufficient_evidence
+B006,A007,review,0.85,1.0,ambiguous_or_insufficient_evidence
+B007,A008,review,1.0,1.0,multiple_right_records_for_one_left
+B008,A008,review,1.0,1.0,multiple_right_records_for_one_left

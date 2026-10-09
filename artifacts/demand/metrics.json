@@ -1,0 +1,87 @@
+{
+  "selected_model": "boosted",
+  "validation": {
+    "poisson": {
+      "mae": 126.07980339001077,
+      "rmse": 185.03833762746896,
+      "wape": 0.5859767863851195
+    },
+    "boosted": {
+      "mae": 87.45426647986638,
+      "rmse": 122.08166216519902,
+      "wape": 0.4064582006764152
+    }
+  },
+  "test": {
+    "mae": 94.07015031656223,
+    "rmse": 130.81954455777307,
+    "wape": 0.37022268869735375,
+    "empirical_interval_coverage": 0.8800274223034735,
+    "mean_interval_width": 340.99891955650395
+  },
+  "test_baseline": {
+    "mae": 125.7028195634422,
+    "rmse": 175.40075680754248,
+    "wape": 0.49471629075756124
+  },
+  "rolling_train_folds": [
+    {
+      "mae": 61.291498784000886,
+      "rmse": 89.8980337195061,
+      "wape": 0.3497719140595068
+    },
+    {
+      "mae": 29.453329690078032,
+      "rmse": 48.22706516981796,
+      "wape": 0.1611655963260517
+    },
+    {
+      "mae": 33.64766671046546,
+      "rmse": 53.24153975086879,
+      "wape": 0.23588536648775313
+    }
+  ],
+  "interval_residual_width": 210.6409385696176,
+  "features": [
+    "hr",
+    "weekday",
+    "workingday",
+    "holiday",
+    "month",
+    "year_index",
+    "temp",
+    "hum",
+    "windspeed",
+    "weathersit"
+  ],
+  "excluded_leakage_columns": [
+    "casual",
+    "registered",
+    "cnt",
+    "instant"
+  ],
+  "split": {
+    "train": "2011",
+    "calibration_and_selection": "Jan\u2013Jun 2012",
+    "test": "Jul\u2013Dec 2012"
+  },
+  "split_sizes": {
+    "train": 8645,
+    "validation": 4358,
+    "test": 4376
+  },
+  "source_sha256": "e03de4ee4ef4dc376ac6e04bf829673c6269e8eba5c60fa121640fa2f829504f",
+  "versions": {
+    "pandas": "3.0.1",
+    "numpy": "2.4.2",
+    "scikit-learn": "1.8.0",
+    "flask": "3.1.3",
+    "joblib": "1.5.3"
+  },
+  "limitations": [
+    "Observed weather is used: conditional demand estimation, not a weather forecast",
+    "Temporal shift breaks exchangeability; intervals report measured coverage, not guaranteed 90% coverage",
+    "Validation selects the model and interval width; a separate calibration period is needed for formal guarantees",
+    "Historical 2011\u20132012 city data does not validate a new fleet or city"
+  ]
+}

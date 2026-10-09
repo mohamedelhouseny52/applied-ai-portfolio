@@ -1,0 +1,181 @@
+{
+  "selected_model": "forest",
+  "threshold": 0.49240600635832465,
+  "threshold_rule": "80th percentile of validation scores; test share can differ",
+  "validation": {
+    "base_rate": {
+      "roc_auc": 0.5,
+      "pr_auc": 0.2654364797728886,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "brier": 0.19497996730765565,
+      "confusion_matrix": [
+        [
+          1035,
+          0
+        ],
+        [
+          374,
+          0
+        ]
+      ],
+      "precision_at_20pct": 0.2765957446808511,
+      "lift_at_20pct": 1.0420411878484468,
+      "flagged_share": 0.0
+    },
+    "logistic": {
+      "roc_auc": 0.8554522204138573,
+      "pr_auc": 0.6714651256309931,
+      "precision": 0.6633333333333333,
+      "recall": 0.5320855614973262,
+      "f1": 0.5905044510385756,
+      "brier": 0.13272563661050482,
+      "confusion_matrix": [
+        [
+          934,
+          101
+        ],
+        [
+          175,
+          199
+        ]
+      ],
+      "precision_at_20pct": 0.6879432624113475,
+      "lift_at_20pct": 2.5917434672128037,
+      "flagged_share": 0.21291696238466998
+    },
+    "forest": {
+      "roc_auc": 0.8577488439381022,
+      "pr_auc": 0.6737720972760305,
+      "precision": 0.6934306569343066,
+      "recall": 0.5080213903743316,
+      "f1": 0.5864197530864198,
+      "brier": 0.13157029968723544,
+      "confusion_matrix": [
+        [
+          951,
+          84
+        ],
+        [
+          184,
+          190
+        ]
+      ],
+      "precision_at_20pct": 0.6879432624113475,
+      "lift_at_20pct": 2.5917434672128037,
+      "flagged_share": 0.19446415897799857
+    }
+  },
+  "test": {
+    "roc_auc": 0.832722364308042,
+    "pr_auc": 0.6335812074729186,
+    "precision": 0.6313993174061433,
+    "recall": 0.4946524064171123,
+    "f1": 0.5547226386806596,
+    "brier": 0.1407302069740985,
+    "confusion_matrix": [
+      [
+        927,
+        108
+      ],
+      [
+        189,
+        185
+      ]
+    ],
+    "precision_at_20pct": 0.6382978723404256,
+    "lift_at_20pct": 2.4047104334964158,
+    "flagged_share": 0.20794889992902768
+  },
+  "test_baseline": {
+    "roc_auc": 0.5,
+    "pr_auc": 0.2654364797728886,
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1": 0.0,
+    "brier": 0.19497996730765565,
+    "confusion_matrix": [
+      [
+        1035,
+        0
+      ],
+      [
+        374,
+        0
+      ]
+    ],
+    "precision_at_20pct": 0.2730496453900709,
+    "lift_at_20pct": 1.0286816854401335,
+    "flagged_share": 0.0
+  },
+  "split_sizes": {
+    "train": 4225,
+    "validation": 1409,
+    "test": 1409
+  },
+  "features": [
+    "tenure",
+    "MonthlyCharges",
+    "TotalCharges",
+    "Contract",
+    "InternetService",
+    "PaymentMethod",
+    "TechSupport",
+    "PaperlessBilling"
+  ],
+  "excluded": [
+    "customerID",
+    "gender",
+    "SeniorCitizen",
+    "Partner",
+    "Dependents",
+    "PhoneService",
+    "MultipleLines",
+    "OnlineSecurity",
+    "OnlineBackup",
+    "DeviceProtection",
+    "StreamingTV",
+    "StreamingMovies",
+    "Churn"
+  ],
+  "data_profile": {
+    "rows": 7043,
+    "columns": 8,
+    "duplicate_rows": 110,
+    "missing": {
+      "tenure": 0,
+      "MonthlyCharges": 0,
+      "TotalCharges": 11,
+      "Contract": 0,
+      "InternetService": 0,
+      "PaymentMethod": 0,
+      "TechSupport": 0,
+      "PaperlessBilling": 0
+    },
+    "types": {
+      "tenure": "int64",
+      "MonthlyCharges": "float64",
+      "TotalCharges": "float64",
+      "Contract": "str",
+      "InternetService": "str",
+      "PaymentMethod": "str",
+      "TechSupport": "str",
+      "PaperlessBilling": "str"
+    }
+  },
+  "source_sha256": "16320c9c1ec72448db59aa0a26a0b95401046bef5d02fd3aeb906448e3055e91",
+  "versions": {
+    "pandas": "3.0.1",
+    "numpy": "2.4.2",
+    "scikit-learn": "1.8.0",
+    "flask": "3.1.3",
+    "joblib": "1.5.3"
+  },
+  "limitations": [
+    "Cross-sectional benchmark: no future observation window or temporal churn validation",
+    "Public demonstration data, not a deployed customer retention system",
+    "No causal claim that contacting high-risk users prevents churn",
+    "Not calibrated to a new business; revalidate label availability and demographics before use"
+  ]
+}

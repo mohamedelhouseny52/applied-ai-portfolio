@@ -1,0 +1,380 @@
+[
+  {
+    "input": "Please recommend a pasta recipe",
+    "result": {
+      "intent": "transfer_not_received_by_recipient",
+      "recommended_team": "transfers",
+      "urgency": "normal",
+      "summary": "please recommend a pasta recipe",
+      "summary_type": "redacted_excerpt",
+      "model_score": 0.0604687925064914,
+      "score_margin": 0.001880078878201491,
+      "action": "manual_review",
+      "review_reasons": [
+        "low_model_score",
+        "ambiguous_intents"
+      ],
+      "alternatives": [
+        {
+          "intent": "transfer_not_received_by_recipient",
+          "score": 0.0604687925064914
+        },
+        {
+          "intent": "cancel_transfer",
+          "score": 0.05858871362828991
+        },
+        {
+          "intent": "request_refund",
+          "score": 0.03941845477885982
+        }
+      ],
+      "references": [
+        {
+          "reference_id": 2865,
+          "intent": "verify_top_up",
+          "similarity": 0.2573508296430041
+        },
+        {
+          "reference_id": 6254,
+          "intent": "terminate_account",
+          "similarity": 0.24607870344619628
+        },
+        {
+          "reference_id": 2611,
+          "intent": "cancel_transfer",
+          "similarity": 0.2411169805854327
+        }
+      ]
+    }
+  },
+  {
+    "input": "What is the weather in Cairo",
+    "result": {
+      "intent": "direct_debit_payment_not_recognised",
+      "recommended_team": "account_support",
+      "urgency": "normal",
+      "summary": "what is the weather in cairo",
+      "summary_type": "redacted_excerpt",
+      "model_score": 0.12060693898729391,
+      "score_margin": 0.06719576936450805,
+      "action": "manual_review",
+      "review_reasons": [
+        "low_model_score",
+        "ambiguous_intents"
+      ],
+      "alternatives": [
+        {
+          "intent": "direct_debit_payment_not_recognised",
+          "score": 0.12060693898729391
+        },
+        {
+          "intent": "exchange_rate",
+          "score": 0.05341116962278586
+        },
+        {
+          "intent": "transfer_timing",
+          "score": 0.04660991150211207
+        }
+      ],
+      "references": [
+        {
+          "reference_id": 1239,
+          "intent": "direct_debit_payment_not_recognised",
+          "similarity": 0.5677178833206721
+        },
+        {
+          "reference_id": 5199,
+          "intent": "card_acceptance",
+          "similarity": 0.43216476883115734
+        },
+        {
+          "reference_id": 6069,
+          "intent": "direct_debit_payment_not_recognised",
+          "similarity": 0.4009847223000392
+        }
+      ]
+    }
+  },
+  {
+    "input": "I want to book a hotel room",
+    "result": {
+      "intent": "request_refund",
+      "recommended_team": "account_support",
+      "urgency": "normal",
+      "summary": "i want to book a hotel room",
+      "summary_type": "redacted_excerpt",
+      "model_score": 0.0803006503005394,
+      "score_margin": 0.020139347594932834,
+      "action": "manual_review",
+      "review_reasons": [
+        "low_model_score",
+        "ambiguous_intents"
+      ],
+      "alternatives": [
+        {
+          "intent": "request_refund",
+          "score": 0.0803006503005394
+        },
+        {
+          "intent": "terminate_account",
+          "score": 0.060161302705606566
+        },
+        {
+          "intent": "cancel_transfer",
+          "score": 0.050121638020928234
+        }
+      ],
+      "references": [
+        {
+          "reference_id": 2937,
+          "intent": "lost_or_stolen_phone",
+          "similarity": 0.3825437838930229
+        },
+        {
+          "reference_id": 1537,
+          "intent": "terminate_account",
+          "similarity": 0.35831572488897173
+        },
+        {
+          "reference_id": 4824,
+          "intent": "lost_or_stolen_phone",
+          "similarity": 0.3032168649015714
+        }
+      ]
+    }
+  },
+  {
+    "input": "My card was stolen",
+    "result": {
+      "intent": "lost_or_stolen_card",
+      "recommended_team": "cards",
+      "urgency": "high",
+      "summary": "my card was stolen",
+      "summary_type": "redacted_excerpt",
+      "model_score": 0.9622976439509423,
+      "score_margin": 0.950597191544518,
+      "action": "manual_review",
+      "review_reasons": [
+        "sensitive_request_requires_review"
+      ],
+      "alternatives": [
+        {
+          "intent": "lost_or_stolen_card",
+          "score": 0.9622976439509423
+        },
+        {
+          "intent": "compromised_card",
+          "score": 0.011700452406424275
+        },
+        {
+          "intent": "declined_card_payment",
+          "score": 0.005459114328285238
+        }
+      ],
+      "references": [
+        {
+          "reference_id": 1231,
+          "intent": "lost_or_stolen_card",
+          "similarity": 1.0000000000000002
+        },
+        {
+          "reference_id": 460,
+          "intent": "lost_or_stolen_card",
+          "similarity": 0.6649055782603446
+        },
+        {
+          "reference_id": 3052,
+          "intent": "lost_or_stolen_card",
+          "similarity": 0.661145838199775
+        }
+      ]
+    }
+  },
+  {
+    "input": "help",
+    "result": {
+      "intent": "cash_withdrawal_not_recognised",
+      "recommended_team": "cash_operations",
+      "urgency": "normal",
+      "summary": "help",
+      "summary_type": "redacted_excerpt",
+      "model_score": 0.0920034655222571,
+      "score_margin": 0.012233073203173184,
+      "action": "manual_review",
+      "review_reasons": [
+        "low_model_score",
+        "ambiguous_intents",
+        "insufficient_context"
+      ],
+      "alternatives": [
+        {
+          "intent": "cash_withdrawal_not_recognised",
+          "score": 0.0920034655222571
+        },
+        {
+          "intent": "lost_or_stolen_card",
+          "score": 0.07977039231908392
+        },
+        {
+          "intent": "cancel_transfer",
+          "score": 0.059334940206865146
+        }
+      ],
+      "references": [
+        {
+          "reference_id": 2576,
+          "intent": "card_linking",
+          "similarity": 0.45263235230426435
+        },
+        {
+          "reference_id": 1483,
+          "intent": "order_physical_card",
+          "similarity": 0.4278456487481426
+        },
+        {
+          "reference_id": 6545,
+          "intent": "activate_my_card",
+          "similarity": 0.40173662917162345
+        }
+      ]
+    }
+  },
+  {
+    "input": "I sent money to another bank and it has not arrived",
+    "result": {
+      "intent": "transfer_not_received_by_recipient",
+      "recommended_team": "transfers",
+      "urgency": "normal",
+      "summary": "i sent money to another bank and it has not arrived",
+      "summary_type": "redacted_excerpt",
+      "model_score": 0.7763386193976938,
+      "score_margin": 0.7298386070575641,
+      "action": "route",
+      "review_reasons": [],
+      "alternatives": [
+        {
+          "intent": "transfer_not_received_by_recipient",
+          "score": 0.7763386193976938
+        },
+        {
+          "intent": "transfer_into_account",
+          "score": 0.046500012340129675
+        },
+        {
+          "intent": "card_arrival",
+          "score": 0.016873495270658515
+        }
+      ],
+      "references": [
+        {
+          "reference_id": 2608,
+          "intent": "transfer_not_received_by_recipient",
+          "similarity": 0.4483079311536886
+        },
+        {
+          "reference_id": 3822,
+          "intent": "transfer_not_received_by_recipient",
+          "similarity": 0.44792143735560735
+        },
+        {
+          "reference_id": 5256,
+          "intent": "transfer_into_account",
+          "similarity": 0.4295715460610198
+        }
+      ]
+    }
+  },
+  {
+    "input": "My card has not arrived yet",
+    "result": {
+      "intent": "card_arrival",
+      "recommended_team": "cards",
+      "urgency": "normal",
+      "summary": "my card has not arrived yet",
+      "summary_type": "redacted_excerpt",
+      "model_score": 0.6505940644491859,
+      "score_margin": 0.5383527860092209,
+      "action": "route",
+      "review_reasons": [],
+      "alternatives": [
+        {
+          "intent": "card_arrival",
+          "score": 0.6505940644491859
+        },
+        {
+          "intent": "transfer_not_received_by_recipient",
+          "score": 0.112241278439965
+        },
+        {
+          "intent": "card_delivery_estimate",
+          "score": 0.04073247117919051
+        }
+      ],
+      "references": [
+        {
+          "reference_id": 4904,
+          "intent": "transfer_not_received_by_recipient",
+          "similarity": 0.6563349767937929
+        },
+        {
+          "reference_id": 2608,
+          "intent": "transfer_not_received_by_recipient",
+          "similarity": 0.6194836147394583
+        },
+        {
+          "reference_id": 3822,
+          "intent": "transfer_not_received_by_recipient",
+          "similarity": 0.5895024664781406
+        }
+      ]
+    }
+  },
+  {
+    "input": "Email me at nadia@example.test about card delivery",
+    "result": {
+      "intent": "card_arrival",
+      "recommended_team": "cards",
+      "urgency": "normal",
+      "summary": "email me at [email] about card delivery",
+      "summary_type": "redacted_excerpt",
+      "model_score": 0.23332281912996297,
+      "score_margin": 0.04962858066612583,
+      "action": "manual_review",
+      "review_reasons": [
+        "low_model_score",
+        "ambiguous_intents"
+      ],
+      "alternatives": [
+        {
+          "intent": "card_arrival",
+          "score": 0.23332281912996297
+        },
+        {
+          "intent": "card_delivery_estimate",
+          "score": 0.18369423846383715
+        },
+        {
+          "intent": "order_physical_card",
+          "score": 0.15085745294530606
+        }
+      ],
+      "references": [
+        {
+          "reference_id": 7421,
+          "intent": "edit_personal_details",
+          "similarity": 0.4820939663425222
+        },
+        {
+          "reference_id": 2225,
+          "intent": "order_physical_card",
+          "similarity": 0.39014502379689764
+        },
+        {
+          "reference_id": 4870,
+          "intent": "card_arrival",
+          "similarity": 0.30468814386667653
+        }
+      ]
+    }
+  }
+]

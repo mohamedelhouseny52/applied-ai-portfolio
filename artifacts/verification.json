@@ -1,0 +1,19 @@
+{
+  "python": "3.14.2",
+  "tests": "....................................                                     [100%]\n36 passed in 3.58s",
+  "workflows_run": [
+    "reconciliation",
+    "signed_ingestion",
+    "retention",
+    "temporal_demand",
+    "intent_routing"
+  ],
+  "case_summaries": 5,
+  "embedded_diagnostic_images": 9,
+  "executed_notebooks": 5,
+  "source_manifest": "data/sources.json",
+  "docker": "Not tested: Docker engine unavailable",
+  "hosted_ci": "Pending hosted execution",
+  "source_published": true,
+  "model_artifacts": "Locally generated; only load trusted artifacts"
+}

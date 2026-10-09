@@ -1,0 +1,8 @@
+record_id,name,email,ip,event_date,segment,user_agent,left_id,right_id,score,source_b_order_value,source_b_plan
+A001,Nadia Salem,nadia@example.test,192.0.2.1,2025-01-01,S01,Browser A,A001,B001,1.0,120,annual
+A002,Karim Adel,karim@example.test,192.0.2.2,2025-01-04,S02,Browser B,A002,B002,1.0,60,monthly
+A003,Noor Ali,noor1@example.test,192.0.2.3,2025-01-04,S03,Browser A,,,,,
+A004,Noor Ali,noor2@example.test,192.0.2.3,2025-01-05,S03,Browser A,,,,,
+A005,Sam Omar,sam@example.test,192.0.2.5,2025-01-03,S05,Browser B,,,,,
+A007,Lina Mostafa,,192.0.2.7,2025-01-03,S07,Browser C,,,,,
+A008,Tarek Ehab,tarek@example.test,192.0.2.8,2025-01-03,S08,Browser D,,,,,

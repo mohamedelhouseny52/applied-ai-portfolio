@@ -1,0 +1,70 @@
+{
+  "source_a": {
+    "rows": 8,
+    "columns": 7,
+    "duplicate_rows": 0,
+    "missing": {
+      "record_id": 0,
+      "name": 0,
+      "email": 1,
+      "ip": 0,
+      "event_date": 0,
+      "segment": 0,
+      "user_agent": 0
+    },
+    "types": {
+      "record_id": "str",
+      "name": "str",
+      "email": "str",
+      "ip": "str",
+      "event_date": "str",
+      "segment": "str",
+      "user_agent": "str"
+    }
+  },
+  "source_b": {
+    "rows": 8,
+    "columns": 9,
+    "duplicate_rows": 0,
+    "missing": {
+      "record_id": 0,
+      "name": 0,
+      "email": 6,
+      "ip": 0,
+      "event_date": 0,
+      "segment": 0,
+      "user_agent": 0,
+      "order_value": 0,
+      "plan": 0
+    },
+    "types": {
+      "record_id": "str",
+      "name": "str",
+      "email": "str",
+      "ip": "str",
+      "event_date": "str",
+      "segment": "str",
+      "user_agent": "str",
+      "order_value": "str",
+      "plan": "str"
+    }
+  },
+  "output_rows": 7,
+  "duplicates_removed": 1,
+  "decisions": {
+    "review": 5,
+    "matched": 2,
+    "unmatched": 1
+  },
+  "policy": {
+    "max_days": 90,
+    "auto_score": 0.85,
+    "min_margin": 0.15
+  },
+  "sha256": {
+    "A": "67ca4863b101119c366067b0a5991e28e5bc5266a2205b1906a2130faacb8fa1",
+    "B": "ea180d1d8ff94ddc264ae2aadfb62f235460e05a3f790b19261b4070ef202f4f"
+  },
+  "ordering": "Earliest file occurrence; source A order preserved",
+  "score_meaning": "Evidence weights, not calibrated match probabilities"
+}

@@ -1,0 +1,49 @@
+{
+  "validation": {
+    "accuracy": 0.9035,
+    "macro_f1": 0.9054655105664607,
+    "auto_route_coverage": 0.8635,
+    "auto_route_accuracy": 0.95830920671685,
+    "review_share": 0.1365,
+    "auto_route_count": 1727
+  },
+  "test": {
+    "accuracy": 0.9039713541666666,
+    "macro_f1": 0.9043299582488368,
+    "auto_route_coverage": 0.8590494791666666,
+    "auto_route_accuracy": 0.9586964759378552,
+    "review_share": 0.14095052083333334,
+    "auto_route_count": 2639
+  },
+  "threshold": 0.4,
+  "margin": 0.15,
+  "threshold_selection": "Maximum validation coverage with >=95% routed accuracy and >=50 cases",
+  "split_sizes": {
+    "fit": 7999,
+    "validation": 2000,
+    "test": 3072
+  },
+  "test_overlaps_removed": 7,
+  "contradictory_train_texts_removed": 0,
+  "classes": 77,
+  "source_sha256": {
+    "train": "b06e26ac675513959a63135f11b94ea7786ed02da65db93a5650d8838cbc664b",
+    "test": "d12d6e3bc4c3103966ae786dc435913c0c563dfa328f5a3646d0e62cfeeb474d"
+  },
+  "versions": {
+    "pandas": "3.0.1",
+    "numpy": "2.4.2",
+    "scikit-learn": "1.8.0",
+    "flask": "3.1.3",
+    "joblib": "1.5.3"
+  },
+  "limitations": [
+    "English BANKING77 benchmark, not a general multilingual helpdesk model",
+    "Scores are not independently calibrated probabilities",
+    "Coverage metrics apply score/margin gates only; inference adds lexical, context and sensitivity gates",
+    "Regex redaction is partial, not a privacy guarantee",
+    "Out-of-domain rejection is heuristic and only smoke-tested",
+    "Reference retrieval returns examples and labels, not verified answers or generative RAG",
+    "Urgency/team mapping is a demo policy requiring business approval"
+  ]
+}

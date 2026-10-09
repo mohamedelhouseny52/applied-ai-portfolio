@@ -1,0 +1,11 @@
+.venv/
+__pycache__/
+.pytest_cache/
+*.egg-info/
+*.sqlite*
+data/raw/
+artifacts/*/model.joblib
+.env
+
+
+artifacts/file_manifest.json

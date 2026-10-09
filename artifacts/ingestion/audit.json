@@ -1,0 +1,36 @@
+{
+  "requests": [
+    {
+      "first": 202,
+      "replay": 200,
+      "response": {
+        "event_id": "PAY-001",
+        "status": "duplicate"
+      }
+    },
+    {
+      "first": 202,
+      "replay": 200,
+      "response": {
+        "event_id": "PAY-002",
+        "status": "duplicate"
+      }
+    }
+  ],
+  "aggregate": [
+    [
+      "2025-01-04",
+      "EUR",
+      2550,
+      1
+    ],
+    [
+      "2025-01-04",
+      "USD",
+      12010,
+      1
+    ]
+  ],
+  "reprocessing_unchanged": true,
+  "storage": "SQLite/WAL; local reproducible reference implementation"
+}

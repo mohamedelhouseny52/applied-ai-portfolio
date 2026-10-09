@@ -1,0 +1,9 @@
+right_id,left_id,score,email_exact,conflicting_emails,days_apart,safe_rule,name,ip,segment,user_agent
+B001,A001,1.0,False,False,1.0,True,True,True,True,True
+B002,A002,1.0,True,False,117.0,True,True,False,True,False
+B003,A003,1.0,False,False,2.0,True,True,True,True,True
+B003,A004,1.0,False,False,1.0,True,True,True,True,True
+B005,A005,1.0,False,True,0.0,False,True,True,True,True
+B006,A007,0.85,False,False,,False,True,True,True,True
+B007,A008,1.0,False,False,1.0,True,True,True,True,True
+B008,A008,1.0,False,False,2.0,True,True,True,True,True
